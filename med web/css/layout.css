@@ -1,0 +1,556 @@
+/* CSS Reset */
+html,
+body,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
+    line-height: 1.6;
+    color: #000;
+}
+
+body {
+    background-image: url(../images/heartchart.jpg);
+    background-size: cover;
+}
+
+/* Sections */
+.container {
+    margin: 10px;
+    padding: 10px;
+    background-color: #e4e4e4d8;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-members {
+    display: flex;
+    flex-direction: column; /* Corrected */
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.face {
+    text-align: center;
+    min-width: 100px;
+}
+
+.face img {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.face p {
+    margin-top: 5px;
+}
+
+/* Header Styles */
+.page-header {
+    background-image: url('../images/header.jpg'); /* Replace 'path/to/your/image.jpg' with your image path */
+    background-size: cover; /* Adjust to cover the entire header */
+    background-position: center; /* Center the background image */
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 80px 0;
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 2em;
+    color: #fff; /* Change text color for better visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+}
+
+/* Navigation Styles */
+.page-nav {
+   background: #d0d0d0;
+   position: fixed; /* Navbar is fixed to the top */
+   top: 0; /* Navbar at the top */
+   width: 100%; /* Full width */
+   z-index: 1000; /* Ensure navbar is above other elements */
+   overflow: hidden; /* Prevents content from spilling outside */
+}
+
+.page-nav ul {
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   display: flex;
+   justify-content: center; /* Center the menu items */
+   flex-wrap: nowrap; /* Keep items in a single row */
+   overflow-x: auto; /* Allows horizontal scrolling if needed */
+   white-space: nowrap; /* Prevent items from wrapping to the next line */
+}
+
+.page-nav ul li {
+   display: inline-block;
+   margin: 0; /* Remove any margin to reduce spacing */
+}
+
+.page-nav ul li a {
+   display: block;
+   padding: 10px 15px; /* Adjust padding to reduce spacing */
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+.page-nav ul li:hover .submenu {
+   display: block;
+}
+
+.page-nav a:hover {
+   background-color: #ccc; /* Change to the desired hover color */
+   color: #fff; /* Change text color when hovering */
+}
+
+/* Footer Styles */
+#footer-layout {
+    background: #d0d0d0;
+    color: #000000;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer-content {
+    display: flex;
+    align-items: flex-start;
+}
+
+.image {
+    margin-right: 10px;
+    width: 200px;
+    height: auto;
+}
+
+.map-container img {
+    width: 300px; /* Increased from 200px to 300px */
+    height: 500px; /* Kept the original height */
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    object-fit: cover; /* This ensures the image covers the area without distortion */
+    object-position: center; /* Centers the image within the container */
+}
+
+/* phone media below*/
+
+@media (max-width: 767px) {
+    html,
+    body,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+/* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(255, 255, 255);
+        line-height: 1.6;
+        color: #000000;
+    }
+/* Sections */
+    .container {
+        margin: 15px;
+        padding: 15px;
+        background-color: rgba(228, 228, 228, 0.85);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+
+    .container img {
+        max-width: 400px; /* Set a maximum width for the image */
+        height: auto; /* Maintain aspect ratio */
+        border: 2px solid #000; /* Add a border around the image */
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3); /* Add a shadow */
+    }
+
+    .team-members {
+        display: flex;
+        justify-content: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .face {
+        text-align: center;
+        width: 100%;
+    }
+
+
+    .face img {
+        width: 100px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .face p {
+        margin-top: 5px;
+    }
+
+/* Header Styles */
+    .page-header {
+        background-image: url('../images/header.jpg'); /* Replace 'path/to/your/image.jpg' with your image path */
+        background-size: cover; /* Adjust to cover the entire header */
+        background-position: center; /* Center the background image */
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 40px 0;
+    }
+   
+    .page-header h1 {
+        margin: 0;
+        font-size: 2em;
+    /* Adjust text styles as needed */
+        color: #fff; /* Change text color for better visibility */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    }
+
+/* Navigation Styles */
+
+    .page-nav {
+        background: #d0d0d0;
+        position: fixed; /* navbar to fixed position */
+        top: 0; /* navbar at the top */
+        width: 100%; /* Full width */
+    }
+/* Your existing CSS styles for page navigation */
+/* ... */
+
+/* Hover effect for navigation links */
+    .page-nav a:hover {
+        background-color: #ccc; /* Change to the desired hover color */
+        color: #fff; /* Change text color when hovering */
+    /* You can add other style changes for better hover effect */
+    }
+
+    .page-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+
+    .page-nav ul li {
+        display: inline-block;
+        position: relative;
+    }
+
+    .page-nav ul li a {
+        display: block;
+        padding: 10px 20px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        width: 100%;
+    }
+
+    .page-nav ul li:hover .submenu {
+        display: block;
+    }
+
+
+/* Footer Styles */
+    #footer-layout {
+        background: #d0d0d0;
+        color: #000000;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image {
+        margin-right: 10px;
+        width: 80px;
+        height: auto;
+    }
+
+    .info-container {
+        flex-direction: column;
+    }
+}
+
+
+
+
+
+
+/* below is the tablet/medium size media */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    html,
+    body,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #ffffff;
+        line-height: 1.6;
+        color: #000000;
+    }
+
+    /* Sections */
+    .container {
+        margin: 15px;
+        padding: 15px;
+        background-color: rgba(228, 228, 228, 0.85);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .container img {
+        max-width: 400px; /* Set a maximum width for the image */
+        height: auto; /* Maintain aspect ratio */
+        border: 2px solid #000; /* Add a border around the image */
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3); /* Add a shadow */
+    }
+
+    .team-members {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .face {
+        text-align: center;
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .face img {
+        width: 120px;
+        height: auto;
+        border-radius: 50%;
+    }
+
+    .face p {
+        margin-top: 10px;
+    }
+
+    /* Header Styles */
+    .page-header {
+        background-image: url('../images/header.jpg'); /* Replace 'path/to/your/image.jpg' with your image path */
+        background-size: cover; /* Adjust to cover the entire header */
+        background-position: center; /* Center the background image */
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 60px 0;
+    }
+
+    .page-header h1 {
+        margin: 0;
+        font-size: 1.8em;
+        color: #fff;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    /* Navigation Styles */
+    .page-nav {
+        background: #d0d0d0;
+        position: fixed; /* navbar to fixed position */
+        top: 0; /* navbar at the top */
+        width: 100%; /* Full width */
+    }
+
+    .page-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .page-nav ul li {
+        display: inline-block;
+    }
+
+    .page-nav ul li a {
+        display: block;
+        padding: 15px;
+        color: #000000;
+        text-decoration: none;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .page-nav ul li:hover .submenu {
+        display: block;
+    }
+
+    .page-nav a:hover {
+        background-color: #bbb;
+        color: #fff;
+    }
+
+    /* Footer Styles */ im hazem i love being cutie
+    #footer-layout {
+        background: #d0d0d0;
+        color: #bbb;
+    }
+
+    .image {
+        width: 50px;
+        height: auto;
+    }
+
+}
+
+
+
+
+
+/* this for laptop/desk*/
+
+@media (min-width: 992px) {
+    html,
+    body,
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    /* General Styles */
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(255, 255, 255);
+        line-height: 1.6;
+        color: #000000;
+    }
+
+    /* Sections */
+    
+
+    .container {
+        margin: 15px;
+        padding: 15px;
+        background-color: rgba(228, 228, 228, 0.85);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    
+    .container img {
+        max-width: 400px; /* Set a maximum width for the image */
+        height: auto; /* Maintain aspect ratio */
+        border: 2px solid #000; /* Add a border around the image */
+        box-shadow: 5px 5px 15px rgba(0,0,0,0.3); /* Add a shadow */
+    }
+    
+
+    
+    .address {
+        grid-column: 2;
+    }
+    
+    
+    .team-members {
+        display: flex;
+        flex-direction: row; /* Set the direction to row */
+        flex-wrap: wrap;
+        justify-content: space-between; /* Align items with space between */
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .face {
+        text-align: center;
+        flex: 1;
+        min-width: 150px;
+    }
+
+    .face img {
+        width: 150px;
+        height: 200px;
+        border-radius: 50%;
+    }
+
+    .face p {
+        margin-top: 10px;
+    }
+
+    /* Header Styles */
+    .page-header {
+        background-image: url('../images/header.jpg'); /* Replace 'path/to/your/image.jpg' with your image path */
+        background-size: cover; /* Adjust to cover the entire header */
+        background-position: center; /* Center the background image */
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 100px 0;
+    }
+
+    .page-header h1 {
+        margin: 0;
+        font-size: 2.5em; /* Adjust text styles as needed */
+        color: #fff; /* Change text color for better visibility */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow for better readability */
+    }
+
+    /* Navigation Styles */
+    .page-nav {
+        background: #d0d0d0;
+        position: fixed; /* navbar to fixed position */
+        top: 0; /* navbar at the top */
+        width: 100%; /* Full width */
+    }
+
+    .page-nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        text-align: center; /* Center navigation items */
+    }
+
+    .page-nav ul li {
+        display: inline-block; /* Inline-block for horizontal layout */
+        width: auto;
+    }
+
+    .page-nav ul li a {
+        display: block;
+        padding: 15px 20px;
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+    }
+
+    .page-nav ul li:hover .submenu {
+        display: block;
+    }
+
+    .page-nav a:hover {
+        background-color: #ccc; /* Change to the desired hover color */
+        color: #fff; /* Change text color when hovering */
+    }
+
+    /* Footer Styles */
+    #footer-layout {
+        background: #d0d0d0;
+        color: #000000;
+        text-align: center;
+        padding: 20px 0;
+    }
+
+    .footer-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .image {
+        width: auto;
+        height: auto;
+        position: fixed;
+    }
+
+}
